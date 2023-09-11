@@ -124,7 +124,7 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         'SmallIntegerField': 'smallint',
         'TextField': 'nvarchar(max)',
         'TimeField': 'time',
-        'UUIDField': 'UNIQUEIDENTIFIER',
+        'UUIDField': 'char(36)',
     }
     data_types_suffix = {
         'AutoField': 'IDENTITY (1, 1)',
